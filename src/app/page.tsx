@@ -1,13 +1,13 @@
-import Contact from './sections/contact';
 import HeroSection from './sections/hero';
-import Introduce from './sections/introduce';
+import { Projects } from './sections/projects';
+import Skills from './sections/skills';
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-night-sky bg-fixed">
       <HeroSection />
-      <Introduce />
-      <Contact />
+      <Skills />
+      <Projects />
     </main>
   );
 }

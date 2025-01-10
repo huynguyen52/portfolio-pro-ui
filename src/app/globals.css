@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: black;
+  --primary: #ff69b4;
+}
+
+.container {
+  @apply w-[calc(100%-2rem)] lg:max-w-7xl ml-auto mr-auto;
+}
