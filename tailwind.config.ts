@@ -34,11 +34,16 @@ const config: Config = {
           "linear-gradient(0, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .5) 20%, rgba(0, 0, 0, .5) 80%, rgba(0, 0, 0, 1) 100%), url('/images/night-sky.jpg')",
       },
       animation: {
+        spinLayer: 'spinLayer 10s linear infinite',
         typewriter: 'typewriter 2s steps(35) forwards',
         caret:
           'typewriter 2s steps(35) forwards, blink 1s steps(35) infinite 2s',
       },
       keyframes: {
+        spinLayer: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         typewriter: {
           to: {
             left: '100%',

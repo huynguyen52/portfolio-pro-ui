@@ -13,9 +13,9 @@ export function Project({
 }: ProjectProps) {
   return (
     <article>
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-primary-600 rounded-full -start-3 ring-8 ring-gray-900">
         <svg
-          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+          className="w-2.5 h-2.5 text-primary-100"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -27,7 +27,7 @@ export function Project({
       <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
         {title}
         {latest && (
-          <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
+          <span className="bg-primary-600 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3 select-none">
             Latest
           </span>
         )}
@@ -35,13 +35,9 @@ export function Project({
       <span className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
         {description}
       </span>
-      <ul>
+      <ul className="max-w-md space-y-1 text-gray-400 list-disc list-inside">
         {responsibilities.map((responsibility, index) => (
-          <li key={index}>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              {responsibility}
-            </p>
-          </li>
+          <li key={index}>{responsibility}</li>
         ))}
       </ul>
     </article>

@@ -7,6 +7,16 @@
   --primary: #ff69b4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .container {
-  @apply w-[calc(100%-2rem)] lg:max-w-7xl ml-auto mr-auto;
+  @apply w-[calc(100%-8rem)] lg:max-w-7xl ml-auto mr-auto;
 }

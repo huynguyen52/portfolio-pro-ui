@@ -11,18 +11,21 @@ export default function HeroSection() {
           src="/avatars/me.svg"
           alt="Rounded avatar"
         />
-        <p className="select-none font-bold text-3xl ml-auto mr-auto text-center relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-black after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-primary-400">
-          Hello, I&apos;m Huy. A passionate{' '}
-          <span className="text-primary-400">Software Engineer</span>
+        <h1 className="select-none font-bold text-xl">Hello, I&apos;m Huy. </h1>
+        <p className="select-none font-bold text-3xl relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-black after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-primary-400">
+          A passionate{' '}
+          <span className="text-primary-600">Software Engineer</span>
         </p>
         <a
           type="button"
-          href="#"
+          target="_blank"
+          href="/NguyenQuocHuyCV.pdf"
           className="select-none duration-200 text-black bg-white hover:bg-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
-          Download CV
+          View my CV
         </a>
       </div>
+      <div id="skillset" className="mt-auto mb-[5%] opacity-0 invisible"></div>
     </section>
   );
 }

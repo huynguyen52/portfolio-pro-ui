@@ -4,7 +4,7 @@ import Skills from './sections/skills';
 
 export default function Home() {
   return (
-    <main className="bg-night-sky bg-fixed">
+    <main className="">
       <HeroSection />
       <Skills />
       <Projects />
