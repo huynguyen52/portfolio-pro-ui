@@ -14,8 +14,10 @@ export default function HeroSection() {
           src="/avatars/me.svg"
           alt="Rounded avatar"
         />
-        <h1 className="select-none font-bold text-xl">Hello, I&apos;m Huy. </h1>
-        <p className="select-none font-bold text-3xl relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-black after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-primary-400">
+        <h1 className="select-none font-bold text-sm md:text-xl">
+          Hello, I&apos;m Huy.{' '}
+        </h1>
+        <p className="select-none font-bold text-xl md:text-3xl relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-black after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-primary-400">
           A passionate{' '}
           <span className="text-primary-600">Software Engineer</span>
         </p>
