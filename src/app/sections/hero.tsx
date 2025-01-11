@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="h-screen mt-1/2 flex justify-center items-center">
+    <section
+      id="home"
+      className="h-screen mt-1/2 flex justify-center items-center"
+    >
       <div className="mb-[10%] flex flex-col gap-6 justify-center items-center">
         <Image
           width={10}
@@ -22,7 +25,7 @@ export default function HeroSection() {
           href="/NguyenQuocHuyCV.pdf"
           className="select-none duration-200 text-black bg-white hover:bg-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
-          View my CV
+          Download CV
         </a>
       </div>
       <div id="skillset" className="mt-auto mb-[5%] opacity-0 invisible"></div>

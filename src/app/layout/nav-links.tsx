@@ -3,7 +3,7 @@ import Link from 'next/link';
 const menus = [
   {
     title: 'Home',
-    link: '#',
+    link: '#home',
   },
   {
     title: 'Skillset',
